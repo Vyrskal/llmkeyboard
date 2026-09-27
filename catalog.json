@@ -12,9 +12,31 @@
    "description_ru": "Лаборатория намерила слой ~1 мс на float-весах против 7–10 мс на int8 (v2). После загрузки запустите быструю проверку: клавиатура возьмёт самую быструю модель NPU.",
    "kind": "model",
    "file": "kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite",
-   "url": "https://github.com/Vyrskal/llmkeyboard/releases/download/npu-models/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part1",
    "size": 368631100,
-   "sha256": "ba51b8cf8344ea23d472601e6c8f38d9b2e0ef043a59f065a5092e44beab09f3"
+   "sha256": "ba51b8cf8344ea23d472601e6c8f38d9b2e0ef043a59f065a5092e44beab09f3",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part1",
+     "size": 92157775,
+     "sha256": "e06945907672143ce381fdc64718bbf9f0d198943ff6185c4e192e78682719a0"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part2",
+     "size": 92157775,
+     "sha256": "69e266422418cf4296a3148e9ae5d50846694f3793ad38181259e04d4fad7fc8"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part3",
+     "size": 92157775,
+     "sha256": "5ce64778569692bfc4b83475e0bf8a2561df5b2dbe08ca82a66226b254d2b9bb"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part4",
+     "size": 92157775,
+     "sha256": "e2b490d54deb87ae79d77b9b52885dfbf787fb436545514f529a2d259fb46638"
+    }
+   ]
   },
   {
    "id": "npu-base",
@@ -26,7 +48,7 @@
    "description_ru": "Таблица эмбеддингов, токенизатор, карта словаря и описание модели - общие для v2 и v3g. Уже есть, если модель NPU работала раньше.",
    "kind": "model_zip",
    "file": "llm-keyboard-npu-base.zip",
-   "url": "https://github.com/Vyrskal/llmkeyboard/releases/download/npu-models/llm-keyboard-npu-base.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-base.zip",
    "size": 68623657,
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
   },
@@ -40,7 +62,7 @@
    "description_ru": "Нужна v3g (выше); модели Google (ниже) - по желанию: опыты без файла пропускаются.",
    "kind": "pack",
    "file": "llm-lab-npu-r4.zip",
-   "url": "https://github.com/Vyrskal/llmkeyboard/releases/download/lab-packs/llm-lab-npu-r4.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r4.zip",
    "size": 1041,
    "sha256": "8bf0fb296fd816a463125a63fbc904ab8f386e3328e272e92ec70a4ab8babe7d"
   },
@@ -54,7 +76,7 @@
    "description_ru": "Прошлый раунд - для повторного прогона.",
    "kind": "pack",
    "file": "llm-lab-npu-r3.zip",
-   "url": "https://github.com/Vyrskal/llmkeyboard/releases/download/lab-packs/llm-lab-npu-r3.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r3.zip",
    "size": 98377560,
    "sha256": "19ba6aa773ba8b0fdf8cd226106df195ce6ae904786701a317baaf9ec70df271"
   },

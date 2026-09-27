@@ -2,8 +2,8 @@
 
 Files for the LLM Keyboard Android app (an on-device language model replaces autocorrection and the suggestion strip):
 
-- **NPU models** for MediaTek Dimensity 9500 (MT6993) - GitHub releases (`npu-models`)
-- **experiment packs** for the app's lab - GitHub releases (`lab-packs`)
+- **NPU models** for MediaTek Dimensity 9500 (MT6993) - `files/npu` (big models in parts of < 100 MB, joined by the app)
+- **experiment packs** for the app's lab - `files/lab`
 - **catalog.json** - the list the app's *Downloads* screen shows (it also links Google's official MT6993 models on Hugging Face)
 
 The app downloads everything itself (Settings → Model → Downloads, or the lab). Only data files: nothing downloaded is executed.
