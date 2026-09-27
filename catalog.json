@@ -1,7 +1,69 @@
 {
  "format": 1,
- "updated": "2026-09-27 13:12",
+ "updated": "2026-09-27 13:45",
  "items": [
+  {
+   "id": "npu-v4",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "v4: int8 weights, float head (app 0.7.4)",
+   "title_ru": "v4: int8-веса, float-голова (приложение 0.7.4)",
+   "description": "The layers' weights int8 (int16 x int8 matrix products, the rest float): 267 MB instead of 368 for the NPU to stream per call. On the PC 0.15 nat from the float model. Needs app 0.7.4 and the fp16 embedding table. After the download run the quick check: the keyboard takes the fastest.",
+   "description_ru": "Веса слоёв int8 (матричные умножения int16 × int8, остальное float): 267 МБ вместо 368, которые NPU читает за вызов. На ПК отличие от float-модели 0,15 ната. Нужны приложение 0.7.4 и таблица эмбеддингов fp16. После загрузки — быстрая проверка: клавиатура возьмёт самую быструю.",
+   "kind": "model",
+   "file": "kbd_gemma3_v4_w8_f16h_MediaTek_MT6993.tflite",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4_w8_f16h_MediaTek_MT6993.tflite.part1",
+   "size": 266775408,
+   "sha256": "1db2bf3c7d27a261825ebc240b1e9c19be949095ac3d4ffe901ab8349fe8b961",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4_w8_f16h_MediaTek_MT6993.tflite.part1",
+     "size": 88925136,
+     "sha256": "fdaedefc242f2053cb1f352b6e2cf0394b8550a9ae5a65a75b4c262c4c06fd51"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4_w8_f16h_MediaTek_MT6993.tflite.part2",
+     "size": 88925136,
+     "sha256": "b9bc97b5d845bc929e5bd0269758bd1f9211d45df93093a761ba1c16cabe33a1"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4_w8_f16h_MediaTek_MT6993.tflite.part3",
+     "size": 88925136,
+     "sha256": "db78b1bf410a93eb8e5ffa19881fd90505da153b137e8cc2553b64a8541cc46a"
+    }
+   ]
+  },
+  {
+   "id": "npu-v4h8",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "v4h8: int8 weights, int8 head (smallest)",
+   "title_ru": "v4h8: int8-веса и int8-голова (самая лёгкая)",
+   "description": "Like v4, with the LM head int8 too: 188 MB per call. On the PC 0.35 nat from the float model (the int8 rows of the head). The quick check takes it only if it is clearly faster than v4. Needs app 0.7.4.",
+   "description_ru": "Как v4, но и голова модели int8: 188 МБ за вызов. На ПК отличие от float-модели 0,35 ната (int8-строки головы). Быстрая проверка возьмёт её, только если она заметно быстрее v4. Нужно приложение 0.7.4.",
+   "kind": "model",
+   "file": "kbd_gemma3_v4h8_w8_MediaTek_MT6993.tflite",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4h8_w8_MediaTek_MT6993.tflite.part1",
+   "size": 188320612,
+   "sha256": "3fa1292229e8f36966969bfcf747347c79f58bce03aa1e67d2f5e39f6dee76b9",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4h8_w8_MediaTek_MT6993.tflite.part1",
+     "size": 62773538,
+     "sha256": "d9cd702ebed5f85990c0f5298094e55d1e9f178049937a214071b125d348e8d8"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4h8_w8_MediaTek_MT6993.tflite.part2",
+     "size": 62773538,
+     "sha256": "70f3a0b4a63b28ef4e8202a0b3164a9354b3493f37f8f7b4cbff1bb821f6541f"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4h8_w8_MediaTek_MT6993.tflite.part3",
+     "size": 62773536,
+     "sha256": "16941fe9af463d5221c619327b3540cd350d8f38cb61a59ba0daa479df7ff0b7"
+    }
+   ]
+  },
   {
    "id": "npu-v3g32",
    "group": "NPU keyboard models (Dimensity 9500)",
@@ -118,15 +180,16 @@
    "id": "lab-npu-r5",
    "group": "Lab experiment packs",
    "group_ru": "Пакеты опытов для лаборатории",
-   "title": "npu-r5: Google's int16/int8 recipe, 32-token blocks",
-   "title_ru": "npu-r5: рецепт Google int16/int8, блоки по 32 токена",
-   "description": "Layer 0 and one head chunk as float vs int16 activations + int8 weights (Google's form), the whole models v3g / v3g32 (and v4 when downloaded). Needs app 0.7.3 and v3g32.",
-   "description_ru": "Слой 0 и кусок головы: float против int16-активаций + int8-весов (форма Google); целые модели v3g / v3g32 (и v4, если скачана). Нужны приложение 0.7.3 и v3g32.",
+   "title": "npu-r5: int8 probes, v4 / v4h8, 32-token blocks",
+   "title_ru": "npu-r5: пробы int8, v4 / v4h8, блоки по 32 токена",
+   "description": "Layer 0 and one head chunk as float vs int16 activations + int8 weights (Google's form); the whole models v3g / v3g32 / v4 / v4h8 (those downloaded). Needs app 0.7.4.",
+   "description_ru": "Слой 0 и кусок головы: float против int16-активаций + int8-весов (форма Google); целые модели v3g / v3g32 / v4 / v4h8 (какие скачаны). Нужно приложение 0.7.4.",
    "kind": "pack",
    "file": "llm-lab-npu-r5.zip",
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r5.zip",
-   "size": 82136570,
-   "sha256": "b58379322ec9299f33c13967b26f7f66bc9266a861a326a68e7c91d84271e399"
+   "size": 82136608,
+   "sha256": "125937bd2152a2eab7d4e6271f07185d04a3bff24a8801559aa157d36fe3e153",
+   "parts": []
   },
   {
    "id": "lab-npu-r4",
