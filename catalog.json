@@ -1,7 +1,43 @@
 {
  "format": 1,
- "updated": "2026-09-27 12:31",
+ "updated": "2026-09-27 12:59",
  "items": [
+  {
+   "id": "npu-v3g32",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "v3g32: v3g with 32-token blocks (faster)",
+   "title_ru": "v3g32: v3g с блоками по 32 токена (быстрее)",
+   "description": "The same float model as v3g, compiled for blocks of 32 tokens instead of 64: a key press's candidate tree (~30 nodes) no longer pays for 64. Needs the fp16 embedding table. After the download run the quick check: the keyboard takes the fastest.",
+   "description_ru": "Та же float-модель, что v3g, но собрана под блоки по 32 токена вместо 64: дерево кандидатов нажатия (~30 узлов) больше не платит за 64. Нужна таблица эмбеддингов fp16. После загрузки — быстрая проверка: клавиатура возьмёт самую быструю.",
+   "kind": "model",
+   "file": "kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite.part1",
+   "size": 366988372,
+   "sha256": "0c84ddbb26baf7f7ccd7ca70a1695df3a7742f845894933d4fec43b3d5597431",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite.part1",
+     "size": 91747093,
+     "sha256": "5a1b49fb9b2b1b5f3d9321cf9cd57a1bb2e7ab28c5387074236988a5452b446b"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite.part2",
+     "size": 91747093,
+     "sha256": "7813024af441c082aee9a8de13d0bc36e9471ef851ae36636a7f478739c34f67"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite.part3",
+     "size": 91747093,
+     "sha256": "3734d2d1148d4a308fe38e2f4b57d12472d70dc20ef2446fbbd6f14640adbb3b"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g32_f16w_MediaTek_MT6993.tflite.part4",
+     "size": 91747093,
+     "sha256": "0a1f9cc4b55284d553be750a34d993b78e1ded7713cac29ff9bb411e41518b6d"
+    }
+   ]
+  },
   {
    "id": "npu-v3g",
    "group": "NPU keyboard models (Dimensity 9500)",
