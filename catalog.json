@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-09-27 16:57",
+ "updated": "2026-09-27 17:42",
  "items": [
   {
    "id": "gemma4-e2b-gguf",
@@ -15,6 +15,21 @@
    "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
    "size": 2620370976,
    "sha256": "e531007218dfab990486a5de7676a6932d6ea8dea233d1f698d7c21cf8a16889",
+   "parts": []
+  },
+  {
+   "id": "gemma4-e4b-gguf",
+   "group": "The sentence-fix model",
+   "group_ru": "Модель для исправления предложений",
+   "title": "Gemma 4 E4B, QAT Q4_0 (GGUF, 4.2 GB): more accurate fixes, about twice as slow",
+   "title_ru": "Gemma 4 E4B, QAT Q4_0 (GGUF, 4,2 ГБ): точнее исправляет, примерно вдвое медленнее",
+   "description": "The bigger Gemma 4 (4B effective parameters, QAT, every matrix Q4_0): better at hard sentences - where a sentence ends, a clause that starts with its object. About twice the work per token of E2B and ~2.5 GB of memory while the keyboard is used. With both downloaded, the settings (Typing - Sentence fixes) choose. Wi-Fi recommended.",
+   "description_ru": "Старшая Gemma 4 (4 млрд эффективных параметров, QAT, все матрицы Q4_0): лучше справляется со сложными предложениями — где кончается предложение, предложение, начинающееся с дополнения. Работы на токен примерно вдвое больше, чем у E2B, и ~2,5 ГБ памяти, пока клавиатура в работе. Если скачаны обе, выбор в настройках (Ввод текста → Исправление предложений). Лучше по Wi-Fi.",
+   "kind": "reference",
+   "file": "gemma-4-E4B-it-qat-UD-Q4_K_XL.gguf",
+   "url": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF/resolve/main/gemma-4-E4B-it-qat-UD-Q4_K_XL.gguf",
+   "size": 4215695776,
+   "sha256": "df0fd4ee07072c607c29a0a1cb4f98918426cca12f45a2776bdd6ee6d09a4de3",
    "parts": []
   },
   {
@@ -190,6 +205,21 @@
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-base.zip",
    "size": 68623657,
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
+  },
+  {
+   "id": "lab-npu-r8",
+   "group": "Lab experiment packs",
+   "group_ru": "Пакеты опытов для лаборатории",
+   "title": "npu-r8: sentence fixes with examples, Gemma 4 E2B vs E4B",
+   "title_ru": "npu-r8: исправления с примерами, Gemma 4 E2B против E4B",
+   "description": "The sentences 0.8.1 fixed wrongly and the r7 texts with 0.8.2's prompt (examples, the text without its commas): Gemma 4 E2B and E4B, time and memory, E4B with 6 and 8 threads. Needs app 0.8.2 and the models below (E4B's experiments are skipped without it).",
+   "description_ru": "Фразы, которые 0.8.1 исправила неверно, и тексты r7 с промптом 0.8.2 (примеры, текст без запятых): Gemma 4 E2B и E4B, время и память, E4B на 6 и 8 потоках. Нужны приложение 0.8.2 и модели ниже (без E4B её опыты пропускаются).",
+   "kind": "pack",
+   "file": "llm-lab-npu-r8.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r8.zip",
+   "size": 1275,
+   "sha256": "37ccddd3d8f2d6b27eb2b891be2d516028b0ae4e93ffdaaef5dfd07b0521ed35",
+   "parts": []
   },
   {
    "id": "lab-npu-r7",
