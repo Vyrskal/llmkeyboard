@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-09-27 13:45",
+ "updated": "2026-09-27 15:57",
  "items": [
   {
    "id": "npu-v4",
@@ -177,18 +177,18 @@
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
   },
   {
-   "id": "lab-npu-r5",
+   "id": "lab-npu-r6",
    "group": "Lab experiment packs",
    "group_ru": "Пакеты опытов для лаборатории",
-   "title": "npu-r5: int8 probes, v4 / v4h8, 32-token blocks",
-   "title_ru": "npu-r5: пробы int8, v4 / v4h8, блоки по 32 токена",
-   "description": "Layer 0 and one head chunk as float vs int16 activations + int8 weights (Google's form); the whole models v3g / v3g32 / v4 / v4h8 (those downloaded). Needs app 0.7.4.",
-   "description_ru": "Слой 0 и кусок головы: float против int16-активаций + int8-весов (форма Google); целые модели v3g / v3g32 / v4 / v4h8 (какие скачаны). Нужно приложение 0.7.4.",
+   "title": "npu-r6: final probes before Gemma 4 + Gemma 4 E2B on the CPU",
+   "title_ru": "npu-r6: финальные пробы перед Gemma 4 + Gemma 4 E2B на процессоре",
+   "description": "One 6-layer program of v4 with Google's decode options, with 64-token blocks, with int4 FFN weights; one layer alone (the fixed cost of a program); the whole v4; Gemma 4 E2B on the CPU fixing Russian sentences (needs its download below). Needs app 0.7.9 and v4.",
+   "description_ru": "Одна программа v4 из 6 слоёв с «декодными» опциями Google, с блоками по 64 токена, с int4-весами FFN; один слой отдельно (фиксированная цена программы); вся v4; Gemma 4 E2B на процессоре правит русские предложения (нужна её загрузка ниже). Нужны приложение 0.7.9 и v4.",
    "kind": "pack",
-   "file": "llm-lab-npu-r5.zip",
-   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r5.zip",
-   "size": 82136608,
-   "sha256": "125937bd2152a2eab7d4e6271f07185d04a3bff24a8801559aa157d36fe3e153",
+   "file": "llm-lab-npu-r6.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r6.zip",
+   "size": 83943999,
+   "sha256": "07e45c757963418f1f949ab0d16a97b28b6a5e1ef920c052a956e3f43bd44147",
    "parts": []
   },
   {
@@ -218,6 +218,21 @@
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r3.zip",
    "size": 98377560,
    "sha256": "19ba6aa773ba8b0fdf8cd226106df195ce6ae904786701a317baaf9ec70df271"
+  },
+  {
+   "id": "gemma4-e2b-gguf",
+   "group": "Google's models for this chip (references for the lab)",
+   "group_ru": "Модели Google для этого чипа (эталоны для лаборатории)",
+   "title": "Gemma 4 E2B, QAT Q4_K (GGUF, 2.6 GB) - for lab r6 on the CPU",
+   "title_ru": "Gemma 4 E2B, QAT Q4_K (GGUF, 2,6 ГБ) — для лаб r6 на процессоре",
+   "description": "Google's Gemma 4 E2B (2.3B effective parameters, multilingual) quantized by Unsloth from Google's QAT checkpoint. The lab pack npu-r6 runs it on the CPU (llama.cpp) to measure a sentence fix at a pause. Wi-Fi recommended.",
+   "description_ru": "Gemma 4 E2B от Google (2,3 млрд эффективных параметров, многоязычная), квантование Unsloth из QAT-чекпойнта Google. Пакет лаборатории npu-r6 запускает её на процессоре (llama.cpp), чтобы измерить правку предложения на паузе. Лучше по Wi-Fi.",
+   "kind": "reference",
+   "file": "gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
+   "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
+   "size": 2620370976,
+   "sha256": "e531007218dfab990486a5de7676a6932d6ea8dea233d1f698d7c21cf8a16889",
+   "parts": []
   },
   {
    "id": "google-qwen3-0.6b",
