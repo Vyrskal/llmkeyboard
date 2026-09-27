@@ -1,7 +1,22 @@
 {
  "format": 1,
- "updated": "2026-09-27 15:57",
+ "updated": "2026-09-27 16:57",
  "items": [
+  {
+   "id": "gemma4-e2b-gguf",
+   "group": "The sentence-fix model",
+   "group_ru": "Модель для исправления предложений",
+   "title": "Gemma 4 E2B, QAT Q4_0 (GGUF, 2.6 GB): sentence fixes at a pause",
+   "title_ru": "Gemma 4 E2B, QAT Q4_0 (GGUF, 2,6 ГБ): исправление предложений на паузе",
+   "description": "Google's Gemma 4 E2B (2.3B effective parameters, multilingual) from Google's QAT checkpoint (Unsloth's GGUF, every matrix Q4_0). App 0.8.0 offers the corrected message above the keys when you pause (settings: Typing - Sentence fixes); runs on the CPU in its own process, sends nothing. Wi-Fi recommended.",
+   "description_ru": "Gemma 4 E2B от Google (2,3 млрд эффективных параметров, многоязычная) из QAT-чекпойнта Google (GGUF от Unsloth, все матрицы Q4_0). Приложение 0.8.0 на паузе предлагает над клавиатурой исправленное сообщение (настройки: Ввод текста → Исправление предложений); работает на процессоре в отдельном процессе, ничего не отправляет. Лучше по Wi-Fi.",
+   "kind": "reference",
+   "file": "gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
+   "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
+   "size": 2620370976,
+   "sha256": "e531007218dfab990486a5de7676a6932d6ea8dea233d1f698d7c21cf8a16889",
+   "parts": []
+  },
   {
    "id": "npu-v4",
    "group": "NPU keyboard models (Dimensity 9500)",
@@ -177,6 +192,21 @@
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
   },
   {
+   "id": "lab-npu-r7",
+   "group": "Lab experiment packs",
+   "group_ru": "Пакеты опытов для лаборатории",
+   "title": "npu-r7: sentence fixes (Gemma 4 E2B) and v4 alone",
+   "title_ru": "npu-r7: исправление предложений (Gemma 4 E2B) и v4 без второй копии",
+   "description": "How long the keyboard's sentence fix takes and what it costs in memory: copy-draft length, CPU threads, the fixer process vs the lab's, packed vs plain matrices, a message typed word by word; and v4's key press with the keyboard's own copy released. Needs app 0.8.0, Gemma 4 E2B (below) and v4.",
+   "description_ru": "Сколько длится исправление предложения и сколько памяти оно берёт: длина черновика, потоки процессора, отдельный процесс или процесс лаборатории, упакованные или простые матрицы, сообщение, набранное по словам; и нажатие на v4, пока копия модели клавиатуры выгружена. Нужны приложение 0.8.0, Gemma 4 E2B (ниже) и v4.",
+   "kind": "pack",
+   "file": "llm-lab-npu-r7.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r7.zip",
+   "size": 1551,
+   "sha256": "c0e3c86acfa41cd08ae483831f702d6e423396ad4f0f6402d0bc83912a12e660",
+   "parts": []
+  },
+  {
    "id": "lab-npu-r6",
    "group": "Lab experiment packs",
    "group_ru": "Пакеты опытов для лаборатории",
@@ -218,21 +248,6 @@
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r3.zip",
    "size": 98377560,
    "sha256": "19ba6aa773ba8b0fdf8cd226106df195ce6ae904786701a317baaf9ec70df271"
-  },
-  {
-   "id": "gemma4-e2b-gguf",
-   "group": "Google's models for this chip (references for the lab)",
-   "group_ru": "Модели Google для этого чипа (эталоны для лаборатории)",
-   "title": "Gemma 4 E2B, QAT Q4_K (GGUF, 2.6 GB) - for lab r6 on the CPU",
-   "title_ru": "Gemma 4 E2B, QAT Q4_K (GGUF, 2,6 ГБ) — для лаб r6 на процессоре",
-   "description": "Google's Gemma 4 E2B (2.3B effective parameters, multilingual) quantized by Unsloth from Google's QAT checkpoint. The lab pack npu-r6 runs it on the CPU (llama.cpp) to measure a sentence fix at a pause. Wi-Fi recommended.",
-   "description_ru": "Gemma 4 E2B от Google (2,3 млрд эффективных параметров, многоязычная), квантование Unsloth из QAT-чекпойнта Google. Пакет лаборатории npu-r6 запускает её на процессоре (llama.cpp), чтобы измерить правку предложения на паузе. Лучше по Wi-Fi.",
-   "kind": "reference",
-   "file": "gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
-   "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
-   "size": 2620370976,
-   "sha256": "e531007218dfab990486a5de7676a6932d6ea8dea233d1f698d7c21cf8a16889",
-   "parts": []
   },
   {
    "id": "google-qwen3-0.6b",
