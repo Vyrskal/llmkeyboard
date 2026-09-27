@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-09-27",
+ "updated": "2026-09-27 12:31",
  "items": [
   {
    "id": "npu-v3g",
@@ -8,8 +8,8 @@
    "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
    "title": "v3g: float weights, Google's compiler options",
    "title_ru": "v3g: float-веса, опции компилятора Google",
-   "description": "The lab measured one layer at ~1 ms with float weights vs 7-10 ms with int8 (v2). After the download run the quick check: the keyboard takes the fastest NPU model.",
-   "description_ru": "Лаборатория намерила слой ~1 мс на float-весах против 7–10 мс на int8 (v2). После загрузки запустите быструю проверку: клавиатура возьмёт самую быструю модель NPU.",
+   "description": "Float weights: one call's NPU programs take 26 ms (v2: 384 ms). Needs the fp16 embedding table below (app 0.7.2+). After the downloads run the quick check: the keyboard takes the fastest model.",
+   "description_ru": "Float-веса: программы NPU одного вызова — 26 мс (v2: 384 мс). Нужна таблица эмбеддингов fp16 ниже (приложение 0.7.2+). После загрузок запустите быструю проверку: клавиатура возьмёт самую быструю модель.",
    "kind": "model",
    "file": "kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite",
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part1",
@@ -35,6 +35,32 @@
      "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v3g_f16w_MediaTek_MT6993.tflite.part4",
      "size": 92157775,
      "sha256": "e2b490d54deb87ae79d77b9b52885dfbf787fb436545514f529a2d259fb46638"
+    }
+   ]
+  },
+  {
+   "id": "npu-embed-f16",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "fp16 embedding table (needed by v3g)",
+   "title_ru": "Таблица эмбеддингов fp16 (нужна для v3g)",
+   "description": "App 0.7.2+. The keyboard scores candidates with this table; the int8 one is ~0.2 nat off the model and makes v3g fail its self-test. After the download run the quick check.",
+   "description_ru": "Нужна приложение 0.7.2+. Клавиатура считает очки кандидатов по этой таблице; int8-таблица расходится с моделью на ~0,2 ната, и v3g не проходит самопроверку. После загрузки запустите быструю проверку.",
+   "kind": "model",
+   "file": "kbd_embed_f16.bin",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_embed_f16.bin.part1",
+   "size": 159475216,
+   "sha256": "bd14f12103c1e08edc64ffeef4fcfc6921a547fc377e6c476790d8a7fa438852",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_embed_f16.bin.part1",
+     "size": 79737608,
+     "sha256": "86365fc844e5399b8b02a09a5cf847d1ffacdc0c137d6daf00e304c238896aea"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_embed_f16.bin.part2",
+     "size": 79737608,
+     "sha256": "a5bda6d0fd5c71f01c2652308f128e6f9d9d3a89b395a4c227ee8d21d762594c"
     }
    ]
   },
