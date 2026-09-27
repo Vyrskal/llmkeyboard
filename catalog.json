@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-09-27 12:59",
+ "updated": "2026-09-27 13:12",
  "items": [
   {
    "id": "npu-v3g32",
@@ -113,6 +113,20 @@
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-base.zip",
    "size": 68623657,
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
+  },
+  {
+   "id": "lab-npu-r5",
+   "group": "Lab experiment packs",
+   "group_ru": "Пакеты опытов для лаборатории",
+   "title": "npu-r5: Google's int16/int8 recipe, 32-token blocks",
+   "title_ru": "npu-r5: рецепт Google int16/int8, блоки по 32 токена",
+   "description": "Layer 0 and one head chunk as float vs int16 activations + int8 weights (Google's form), the whole models v3g / v3g32 (and v4 when downloaded). Needs app 0.7.3 and v3g32.",
+   "description_ru": "Слой 0 и кусок головы: float против int16-активаций + int8-весов (форма Google); целые модели v3g / v3g32 (и v4, если скачана). Нужны приложение 0.7.3 и v3g32.",
+   "kind": "pack",
+   "file": "llm-lab-npu-r5.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r5.zip",
+   "size": 82136570,
+   "sha256": "b58379322ec9299f33c13967b26f7f66bc9266a861a326a68e7c91d84271e399"
   },
   {
    "id": "lab-npu-r4",
