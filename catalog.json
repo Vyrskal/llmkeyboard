@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-09-28 03:30",
+ "updated": "2026-10-03 06:00",
  "items": [
   {
    "id": "gemma4-e2b-gguf",
@@ -61,6 +61,52 @@
    "size": 990372672,
    "sha256": "6a255159ee4b01b304f633a57f017dd7d5a69d30fff52abb2614bf0813cef034",
    "parts": []
+  },
+  {
+   "id": "sage-fredt5-corrector",
+   "group": "The sentence-fix model",
+   "group_ru": "Модель для исправления предложений",
+   "title": "Russian corrector sage-fredt5-95m (GGUF Q8_0, 100 MB): Russian fixes in ~0.1 s",
+   "title_ru": "Русский корректор sage-fredt5-95m (GGUF Q8_0, 100 МБ): исправления по-русски за ~0,1 с",
+   "description": "ai-forever's sage-fredt5-distilled-95m (MIT), a T5 model trained to fix Russian spelling, missing spaces, capitals and punctuation, converted to GGUF Q8_0. App 0.8.25: Russian sentence fixes are asked of it first (about 40 ms per message on a computer's two cores, where Gemma 4 E2B takes seconds); when its answer changes the message's words, Gemma 4 fixes as before. Settings: Typing - Sentence fixes.",
+   "description_ru": "sage-fredt5-distilled-95m от ai-forever (MIT) — модель T5, обученная исправлять русскую орфографию, слитные слова, заглавные и знаки препинания; переведена в GGUF Q8_0. Приложение 0.8.25: русские предложения сначала исправляет она (около 40 мс на сообщение на двух ядрах компьютера, у Gemma 4 E2B — секунды); если она поменяла слова сообщения, исправляет Gemma 4, как раньше. Настройки: Ввод текста → Исправление предложений.",
+   "kind": "reference",
+   "file": "sage-fredt5-95m-q8.gguf",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part1",
+   "size": 105086656,
+   "sha256": "49ebd586c327e406d58379e90367ea4f7a662aef9b572adeaa1872417509a99c",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part1",
+     "size": 17514443,
+     "sha256": "75297e93d654fb1a7441702bb56e15768a1e53cf89c19eb0fe51a3b8dcf9ad72"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part2",
+     "size": 17514443,
+     "sha256": "1c233411ace93f8efab5cad692d88ce564c19b1f0e63e0f4db9c8d8aece322eb"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part3",
+     "size": 17514443,
+     "sha256": "8716dac7da6f205f7d07c3a8522293bcee3ad6374c8c0339a60543dcff39961f"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part4",
+     "size": 17514443,
+     "sha256": "2f43ce41ebc0daab512df8792bd4855ad86653f5245ea6c8256352862f612b0f"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part5",
+     "size": 17514442,
+     "sha256": "386789f10c67edf8e2b3d4faed3ce2a0198de90da25b1833b77f6e6226c31c30"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part6",
+     "size": 17514442,
+     "sha256": "98fa6b720966e005953f5a78c406925aa71cf1f354bba3aa92d4033871b0ac20"
+    }
+   ]
   },
   {
    "id": "npu-v4",
