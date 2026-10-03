@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-10-03 07:00",
+ "updated": "2026-10-03 09:30",
  "items": [
   {
    "id": "gemma4-e2b-gguf",
@@ -38,8 +38,8 @@
    "group_ru": "Модель для исправления предложений",
    "title": "Gemma 4 E2B hearing: voice messages (GGUF mmproj, 0.99 GB)",
    "title_ru": "Слух Gemma 4 E2B: голосовые сообщения (GGUF mmproj, 0,99 ГБ)",
-   "description": "The audio encoder of Gemma 4 E2B (its multimodal projector, F16 - the fast one on the phone's CPU; it holds the vision encoder too). App 0.8.13: share a voice message (WhatsApp: long press - Share - Transcribe) and the fixer model writes its text, the gist of a long one and answers to it - on the phone, nothing is sent. Needs the Gemma 4 E2B model above. Wi-Fi recommended.",
-   "description_ru": "Аудио-энкодер Gemma 4 E2B (её мультимодальный проектор, F16 — быстрый на процессоре телефона; в нём же и энкодер изображений). Приложение 0.8.13: поделитесь голосовым сообщением (WhatsApp: долгое нажатие → Поделиться → Расшифровать) — модель исправлений напишет его текст, суть длинного и ответы на него, на телефоне, ничего не отправляя. Нужна модель Gemma 4 E2B выше. Лучше по Wi-Fi.",
+   "description": "The audio encoder of Gemma 4 E2B (its multimodal projector, F16 - the fast one on the phone's CPU; it holds the vision encoder too). App 0.8.13: share a voice message (WhatsApp: long press - Share - Transcribe) and the fixer model writes its text, the gist of a long one and answers to it - on the phone, nothing is sent. Needs the Gemma 4 E2B model above. Wi-Fi recommended. App 0.8.27 makes a compact copy of it on the phone at the first voice message (the audio encoder alone, Q8: E2B 330 MB), and hears with that; the F16 file can then be deleted.",
+   "description_ru": "Аудио-энкодер Gemma 4 E2B (её мультимодальный проектор, F16 — быстрый на процессоре телефона; в нём же и энкодер изображений). Приложение 0.8.13: поделитесь голосовым сообщением (WhatsApp: долгое нажатие → Поделиться → Расшифровать) — модель исправлений напишет его текст, суть длинного и ответы на него, на телефоне, ничего не отправляя. Нужна модель Gemma 4 E2B выше. Лучше по Wi-Fi. Приложение 0.8.27 при первом голосовом делает из него на телефоне компактную копию (только аудио-энкодер, Q8: у E2B 330 МБ) и слушает ею; файл F16 после этого можно удалить.",
    "kind": "reference",
    "file": "gemma-4-E2B-mmproj-F16.gguf",
    "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/mmproj-F16.gguf",
@@ -53,8 +53,8 @@
    "group_ru": "Модель для исправления предложений",
    "title": "Gemma 4 E4B hearing: voice messages (GGUF mmproj, 0.99 GB)",
    "title_ru": "Слух Gemma 4 E4B: голосовые сообщения (GGUF mmproj, 0,99 ГБ)",
-   "description": "The audio encoder of Gemma 4 E4B (its multimodal projector, F16 - the fast one on the phone's CPU; it holds the vision encoder too). App 0.8.13: share a voice message (WhatsApp: long press - Share - Transcribe) and the fixer model writes its text, the gist of a long one and answers to it - on the phone, nothing is sent. Needs the Gemma 4 E4B model above. Wi-Fi recommended.",
-   "description_ru": "Аудио-энкодер Gemma 4 E4B (её мультимодальный проектор, F16 — быстрый на процессоре телефона; в нём же и энкодер изображений). Приложение 0.8.13: поделитесь голосовым сообщением (WhatsApp: долгое нажатие → Поделиться → Расшифровать) — модель исправлений напишет его текст, суть длинного и ответы на него, на телефоне, ничего не отправляя. Нужна модель Gemma 4 E4B выше. Лучше по Wi-Fi.",
+   "description": "The audio encoder of Gemma 4 E4B (its multimodal projector, F16 - the fast one on the phone's CPU; it holds the vision encoder too). App 0.8.13: share a voice message (WhatsApp: long press - Share - Transcribe) and the fixer model writes its text, the gist of a long one and answers to it - on the phone, nothing is sent. Needs the Gemma 4 E4B model above. Wi-Fi recommended. App 0.8.27 makes a compact copy of it on the phone at the first voice message (the audio encoder alone, Q8: E2B 330 MB), and hears with that; the F16 file can then be deleted.",
+   "description_ru": "Аудио-энкодер Gemma 4 E4B (её мультимодальный проектор, F16 — быстрый на процессоре телефона; в нём же и энкодер изображений). Приложение 0.8.13: поделитесь голосовым сообщением (WhatsApp: долгое нажатие → Поделиться → Расшифровать) — модель исправлений напишет его текст, суть длинного и ответы на него, на телефоне, ничего не отправляя. Нужна модель Gemma 4 E4B выше. Лучше по Wi-Fi. Приложение 0.8.27 при первом голосовом делает из него на телефоне компактную копию (только аудио-энкодер, Q8: у E2B 330 МБ) и слушает ею; файл F16 после этого можно удалить.",
    "kind": "reference",
    "file": "gemma-4-E4B-mmproj-F16.gguf",
    "url": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF/resolve/main/mmproj-F16.gguf",
@@ -353,6 +353,20 @@
    "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-base.zip",
    "size": 68623657,
    "sha256": "2429b3f5dcb0656b6cca5897b62491e86090f0288a1c662429df35072ba91f1f"
+  },
+  {
+   "id": "lab-npu-r9",
+   "group": "Lab experiment packs",
+   "group_ru": "Пакеты опытов для лаборатории",
+   "title": "npu-r9: Gemma 4's hearing - F16 vs the compact Q8 copy (app 0.8.27)",
+   "title_ru": "npu-r9: слух Gemma 4 — F16 против компактной копии Q8 (приложение 0.8.27)",
+   "description": "A 17 s recording (in the pack) heard from a fresh fixer process: with the downloaded F16 hearing, with its compact copy made anew on the phone, and with the copy ready; E2B, and E4B when downloaded. Load times, encoder, transcript. Needs app 0.8.27, Gemma 4 and its hearing.",
+   "description_ru": "Запись 17 с (в пакете) из свежего процесса модели: со скачанным слухом F16, с его компактной копией, сделанной на телефоне заново, и с готовой копией; E2B, и E4B, если скачана. Время загрузки, энкодер, текст. Нужны приложение 0.8.27, Gemma 4 и её слух.",
+   "kind": "pack",
+   "file": "llm-lab-npu-r9.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/lab/llm-lab-npu-r9.zip",
+   "size": 140958,
+   "sha256": "c10944c5b2ac2e34afbb465ce8e2c308295d83d59d66df8df13afacbf24cb865"
   },
   {
    "id": "lab-npu-r8",
