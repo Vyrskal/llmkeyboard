@@ -1,6 +1,6 @@
 {
  "format": 1,
- "updated": "2026-10-03 06:00",
+ "updated": "2026-10-03 07:00",
  "items": [
   {
    "id": "gemma4-e2b-gguf",
@@ -105,6 +105,78 @@
      "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/fix/sage-fredt5-95m-q8.gguf.part6",
      "size": 17514442,
      "sha256": "98fa6b720966e005953f5a78c406925aa71cf1f354bba3aa92d4033871b0ac20"
+    }
+   ]
+  },
+  {
+   "id": "npu-v4az",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "v4az: v4 with Azerbaijani in its vocabulary (app 0.8.26)",
+   "title_ru": "v4az: v4 с азербайджанским в словаре модели (приложение 0.8.26)",
+   "description": "v4 (int8 weights, float head) whose vocabulary has Azerbaijani pieces too (127 220 tokens instead of 124 590): ə, ı, ğ, ş words are no longer spelled out in bytes. On the PC: Azerbaijani autocorrection 85.0 → 89.0 % (test, 200 words), 86.0 → 90.5 % (dev), no correct word spoiled (was 1.8 %); Russian and English unchanged. One download: the graph and its own tables (v4az.*), next to v4's - v4 keeps working. After the download run the quick check: v4az is taken unless it is more than 10 % slower.",
+   "description_ru": "v4 (веса int8, голова float), в словаре которой есть и азербайджанские токены (127 220 вместо 124 590): слова с ə, ı, ğ, ş модель больше не читает по байтам. На компьютере: азербайджанская автокоррекция 85,0 → 89,0 % (test, 200 слов), 86,0 → 90,5 % (dev), ни одного испорченного верного слова (было 1,8 %); русский и английский без изменений. Одна загрузка: граф и его таблицы (v4az.*), рядом с файлами v4 — v4 продолжает работать. После загрузки запусти быструю проверку: v4az выбирается, если она не медленнее больше чем на 10 %.",
+   "kind": "model_zip",
+   "file": "llm-keyboard-npu-v4az.zip",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part1",
+   "size": 515868684,
+   "sha256": "67d78925d6924ac8ff0d95e60cba1024f1cd14079a9bfaa958686df144682df8",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part1",
+     "size": 85978114,
+     "sha256": "627d3ecca0818ed2dc127ff297f338cf54def95325cbabd36f9054d997aeadb8"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part2",
+     "size": 85978114,
+     "sha256": "0285d304c1340e2ecd258084ba4083afca6517e7b216bd3e4780339340fcab41"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part3",
+     "size": 85978114,
+     "sha256": "d98567fbc0b0c2eef8a7fe415296ee1c533d00b23eefc849118eab818238113f"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part4",
+     "size": 85978114,
+     "sha256": "39726a9e3e8918b4a2c4140834b5a4e58f3ee5e40ff956a128d0fcc8c735ebe2"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part5",
+     "size": 85978114,
+     "sha256": "72a5eb160985a597313c8c72b327d72aa8deaeffd81b35afe8cfe42bc3c09d86"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/llm-keyboard-npu-v4az.zip.part6",
+     "size": 85978114,
+     "sha256": "871f308d8c03cc6b48156166c923eec8c58a49099b0ec121fe680b40e2ace58b"
+    }
+   ]
+  },
+  {
+   "id": "npu-v4azh8",
+   "group": "NPU keyboard models (Dimensity 9500)",
+   "group_ru": "Модели клавиатуры для NPU (Dimensity 9500)",
+   "title": "v4azh8: v4az with an int8 head (optional, smaller)",
+   "title_ru": "v4azh8: v4az с головой int8 (по желанию, меньше)",
+   "description": "Like v4h8 for v4az: 190 MB per call. Needs v4az above (its tables). The quick check takes it only if it is clearly faster.",
+   "description_ru": "Как v4h8, для v4az: 190 МБ на вызов. Нужна v4az выше (её таблицы). Быстрая проверка берёт её, только если она заметно быстрее.",
+   "kind": "model",
+   "file": "kbd_gemma3_v4azh8_w8_MediaTek_MT6993.tflite",
+   "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4azh8_w8_MediaTek_MT6993.tflite.part1",
+   "size": 189968852,
+   "sha256": "2275221b8dce6a9de935ca17221a5319f60ae8bb3b07de125be005bb3b0e8df0",
+   "parts": [
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4azh8_w8_MediaTek_MT6993.tflite.part1",
+     "size": 94984426,
+     "sha256": "f6a6c5500f365356e811f144c6ad9840d8dcb2c183055d855985112e72899163"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/Vyrskal/llmkeyboard/main/files/npu/kbd_gemma3_v4azh8_w8_MediaTek_MT6993.tflite.part2",
+     "size": 94984426,
+     "sha256": "441ab98f2d5b96c4cf97ceba9700a4c4b2122cd7d41f5b30d351f889a83778d5"
     }
    ]
   },
